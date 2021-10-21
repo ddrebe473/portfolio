@@ -1,0 +1,61 @@
+.trollface {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "chungus chungus troll troll"
+    "chungus chungus bruh bruh"
+    "chungus chungus hmmst yes"
+    "no no no no"
+    "why why why why";
+  gap: 10px 20px;
+}
+
+div {
+  border: 1em double rgb(91, 91, 91);
+  color: white;
+  font-size: 20px;
+}
+
+.chungus {
+  grid-area: chungus;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
+.troll {
+  grid-area: troll;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
+.hmmst {
+  grid-area: hmmst;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
+.bruh {
+  grid-area: bruh;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
+.no {
+  grid-area: no;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
+.yes {
+  grid-area: yes;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
+.why {
+  grid-area: why;
+  display: grid;
+  justify-items: center;
+  justify-content: Space-evenly;
+}
