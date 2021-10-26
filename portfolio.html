@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *{
+        scroll-behavior:auto;
+        scrollbar-width: 15px;
+      }
+      :root {
+        --defaultfont: Verdana, Geneva, Tahoma, sans-serif;
+        --navgradient: linear-gradient(90deg, rgb(30, 30, 30), rgb(100, 0, 0));
+      }
+      .me {
+        position: absolute;
+        right: 0%;
+        margin-top: 250px;
+        margin-right: 250px;
+        font-size: 40px;
+        font-family: var(--defaultfont);
+        text-align: center;
+      }
+
+      .nav {
+        position: fixed;
+        display: inline-block;
+        top: -26px;
+        width: 100%;
+        z-index: 100;
+        /* border: 2px solid black;
+              padding: 10px; */
+        margin-top: -12px;
+        box-shadow: 0px 5px 25px var(--navgradient);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(54, 0, 0);
+        transition: all 1s;
+      }
+
+      .over:hover .nav{
+        /* animation-name: nav;
+        animation-duration: 10s; */
+        top: 10px;
+      }
+
+      .nav-show{
+        background-color: red;
+      }
+
+      @keyframes nav {
+        from{
+          top: 0px;
+        }
+        to{
+          top: -1000px;
+          
+        }
+      }
+
+      .words {
+        position: relative;
+        left: 0%;
+        margin-top: 250px;
+        margin-right: 250px;
+        margin-left: 100px;
+        font-family: var(--defaultfont);
+        font-size: 25px;
+      }
+
+      #navbutton {
+        padding: 5px;
+      }
+
+      #navlist {
+        align-self: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #850000;
+      }
+
+      #navelement {
+        display: inline-block;
+        /* float: left; */
+      }
+
+      #navelement a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: var(--defaultfont);
+      }
+      body {
+        background-color: #b50000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23910b0b' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23711313' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23541717' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%233b1717' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23251515' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23130e0e' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23040404' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      
+    </style>
+  </head>
+  <body style="margin: 0">
+    <div class="over">
+    <div class="nav" id="nav" onmouseover="activeNav">
+     
+        <li id="navelement">
+          <a href="portfolio.html" id="navbutton"> Portfolio Page </a>
+        </li>
+        <li id="navelement">
+          <a href="Projects.html" id="navbutton"> Projects </a>
+        </li>
+        <li id="navelement">
+          <a href="./contact.html" id="navbutton"> Contact Me </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="words" style="color: white">
+      <img src="./me.jpg" width="15%" height="15%" style="float: right" />
+      <p>Hello I am Dylan Drebes</p>
+      <ul>
+        <li>I am a practicing year one student at West Mec</li>
+        <li>My specialties include Geography and World History</li>
+        <li>My interets include Fitness and Video production</li>
+        <li>The codes I am familiar with are HTML, CSS and JS</li>
+        <li>I know HTML the best, then CSS, and then JS the least best</li>
+      </ul>
+      <div class="me_text"><p>Dylan Drebes</p></div>
+    </div>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
