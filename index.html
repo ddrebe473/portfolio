@@ -4,41 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Porfolio project/porfolio.css">
-    <title>Document</title>
-
+    <link rel="stylesheet" href="./Porfolio project/porfolio.css" />
+    <title>Dylan Drebes Portfolio</title>
   </head>
-  <body>
+  <body style="padding: 0 0 0 0; margin: 0 0 0 0">
     <div class="over">
-    <div class="nav" id="nav">
-     
+      <div class="nav" id="nav">
         <li id="navelement">
           <a href="portfolio.html" id="navbutton"> Portfolio Page </a>
+          <div class="triangle-down"></div>
         </li>
         <li id="navelement">
           <a href="Projects.html" id="navbutton"> Projects </a>
+          <div class="triangle-down_2"></div>
+        </li>
+        <li id="navelement">
+          <a href="./Resume.html" id="navbutton"> Resume </a>
+          <div class="triangle-down_3"></div>
         </li>
         <li id="navelement">
           <a href="./contact.html" id="navbutton"> Contact Me </a>
+          <div class="triangle-down_4"></div>
         </li>
-      </ul>
-    </div>
-    </div>
-    <!-- <div class="name">
-      <p>Hello I am Dylan Drebes</p>
-      </div> -->
-      <div class="picture_of_me">
-      <img class="me" src="./me_new.jpg" />
       </div>
-      <div class="bullet_points">
-      <ul>
-        <li>I am a practicing year one student at West Mec</li>
-        <li>My specialties include Geography and World History</li>
-        <li>My interets include Fitness and Video production</li>
-        <li>The codes I am familiar with are HTML, CSS and JS</li>
-        <li>I know HTML, then CSS, and JS</li>
-      </ul>
     </div>
+    <div class="info">
+      <div
+        id="rotate_me"
+        onmouseleave="returntozero()"
+        onmouseenter="bananarotate()"
+      >
+        <img class="me" src="./me_new.jpg" />
+        <img class="me_1" src="./me_new.jpg" />
+        <img class="me_2" src="./me_new.jpg" />
+        <img class="me_3 cv" src="./me_new.jpg" />
+      </div>
+    </div>
+    <h1 class="about">
+      <b>Education</b>
+      <br /><br />
+      I am a Dylan Drebes, I am 16 years old and I am practicing year one
+      student at West Mec My interets include Fitness, Video production, but
+      mainly coding. My unweighted GPA is 2.88.
+      <br /><br />
+      <b>My skill</b>
+      <br /><br />
+      The codes that I use are HTML, CSS, JS, and C#. I use C# to create games
+      on unity and the rest for web development. My top 3 creations using HTML,
+      CSS and JS are a fake website that I coded with a partner, calculator, and
+      a tic tac toe game.
+    </h1>
+    <p id="timer"></p>
     <script src="portfolio.js"></script>
   </body>
 </html>
