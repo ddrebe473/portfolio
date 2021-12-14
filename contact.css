@@ -1,60 +1,191 @@
-*{
-  scroll-behavior:auto;
+body {
+  background-color: #b50000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23910b0b' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23711313' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23541717' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%233b1717' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23251515' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23130e0e' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23040404' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+* {
+  scroll-behavior: auto;
   scrollbar-width: 15px;
+  padding: 0;
 }
 :root {
   --defaultfont: Verdana, Geneva, Tahoma, sans-serif;
   --navgradient: linear-gradient(90deg, rgb(30, 30, 30), rgb(100, 0, 0));
 }
-
+#timer {
+  margin-top: -23%;
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 30px;
+}
 .nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  top: -26px;
+  width: 100%;
+  z-index: 100;
+  margin-top: -12px;
+  box-shadow: 0px 5px 25px var(--navgradient);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(54, 0, 0);
+  transition: all 1s;
+  text-shadow: black 3px 3px;
+}
+.over:hover .nav {
+  /* animation-name: nav;
+        animation-duration: 10s; */
+  top: 1px;
+}
+.nav-show {
+  background-color: red;
+}
+@keyframes nav {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -1000px;
+  }
+}
+
+#navbutton {
+  padding: 5px;
+}
+
+#navlist {
+  align-self: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #850000;
+}
+
+#navelement {
+  display: inline-block;
+  /* float: left; */
+}
+
+#navelement a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 1rem;
+  text-decoration: none;
+  font-family: var(--defaultfont);
+}
+
+.triangle-down {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -10px;
+  left: 60px;
+}
+.triangle-down_2 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -10px;
+  left: 35px;
+}
+.triangle-down_3 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -0.625rem;
+  left: 2.3rem;
+}
+.triangle-down_4 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -0.625rem;
+  left: 3.3rem;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1%;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+form {
+  position: relative;
+  width: 70%;
+  /* left: 15%; */
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  font-family: var(--defaultfont);
+}
+h3 {
+  position: relative;
+  top: 10px;
+  font-family: var(--defaultfont);
+  color: white;
+  text-shadow: black 7px 7px;
+  font-size: xx-large;
+}
+@media (max-width: 1000px) {
+  .nav {
     position: fixed;
-    display: inline-block;
-    top: -26px;
+    display: flex;
+    justify-content: space-between;
+    top: 14px;
     width: 100%;
     z-index: 100;
-    /* border: 2px solid black;
-          padding: 10px; */
-    margin-top: -12px;
+    margin-top: -30px;
     box-shadow: 0px 5px 25px var(--navgradient);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 3vw;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-color: rgb(54, 0, 0);
-    transition: all 1s;
+    text-shadow: black 3px 3px;
   }
 
-  .over:hover .nav{
-    /* animation-name: nav;
-    animation-duration: 10s; */
-    top: 10px;
-  }
-
-  .nav-show{
+  .nav-show {
     background-color: red;
-  }
-
-  @keyframes nav {
-    from{
-      top: 0px;
-    }
-    to{
-      top: -1000px;
-      
-    }
-  }
-
-  .words {
-    position: relative;
-    left: 0%;
-    margin-top: 250px;
-    margin-right: 250px;
-    margin-left: 100px;
-    font-family: var(--defaultfont);
-    font-size: 25px;
   }
 
   #navbutton {
@@ -83,53 +214,40 @@
     text-decoration: none;
     font-family: var(--defaultfont);
   }
-  body {
-    background-color: #b50000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23910b0b' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23711313' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23541717' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%233b1717' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23251515' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23130e0e' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23040404' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
+  .triangle-down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 4.5vmax;
   }
-  
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  .triangle-down_2 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 2.5vmax;
   }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  .triangle-down_3 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 2.4vmax;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
+  .triangle-down_4 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 3.5vmax;
   }
-  
-  .contact {
-    position: absolute;
-    bottom: 200px;
-    right:450px;
-    display: flex;
-    justify-content:center ;
-    border-radius: 5px;
-    padding: 20px;
-    font-family: var(--defaultfont);
-  }
-  h3{
-    position: absolute;
-    bottom: 700px;
-    right:850px;
-    font-family: var(--defaultfont);
-    color: white;
-    text-shadow: black 7px 7px;
-    font-size: xx-large;
-  }
+}
