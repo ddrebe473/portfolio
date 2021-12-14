@@ -48,13 +48,11 @@ h1 {
   perspective: none;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 85%;
+  width: 100rem;
+  height: 30rem;
   transition: transform 0.5s linear;
   transform: rotateY(0deg);
-  display: flex;
-  z-index: 100%;
-  padding-top: 100px;
+  padding-top: 6.25rem;
   position: relative;
   right: 30rem;
 }
@@ -171,15 +169,13 @@ h1 {
   font-family: var(--defaultfont);
   position: relative;
   left: 33rem;
-  top: -20rem;
+  top: -30rem;
   margin: 0rem;
   padding: 0rem;
-  width: clamp(45w, 5vw, 50vw);
   height: clamp(1rem, 5vw, 6rem);
 }
 #timer {
   margin: 0;
-  position: absolute;
   bottom: 41.5vmax;
   font-family: var(--defaultfont);
   color: white;
@@ -199,108 +195,4 @@ h1 {
     padding: 0rem;
   }
 }
-
-/*@media only screen and (max-width: 750px) {
-  .nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    top: 14px;
-    width: 100%;
-    margin-top: -30px;
-    box-shadow: 0px 5px 25px var(--navgradient);
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3vw;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(54, 0, 0);
-    text-shadow: black 3px 3px;
-  }
-
-  .nav-show {
-    background-color: red;
-  }
-
-  #navbutton {
-    padding: 5px;
-  }
-
-  #navlist {
-    align-self: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: #850000;
-  }
-
-  #navelement {
-    display: inline-block;
-  }
-
-  #navelement a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: var(--defaultfont);
-  }
-} */
-/* @media only screen and (max-width: 750px) {
-  #rotate_me:hover {
-    animation: none;
-  }
-  #rotate_me {
-    position: relative;
-    left: -30rem;
-    display: flex;
-  }
-  #timer {
-    margin: 0;
-    position: absolute;
-    bottom: 90vmax;
-    font-family: var(--defaultfont);
-    color: white;
-    font-size: 30px;
-  }
-  .triangle-down {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 10px solid rgb(255, 255, 255);
-    width: 1%;
-    position: relative;
-    top: -1vmax;
-    left: 4.5vmax;
-  }
-  .triangle-down_2 {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 10px solid rgb(255, 255, 255);
-    width: 1%;
-    position: relative;
-    top: -1vmax;
-    left: 2.5vmax;
-  }
-  .triangle-down_3 {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 10px solid rgb(255, 255, 255);
-    width: 1%;
-    position: relative;
-    top: -1vmax;
-    left: 2.4vmax;
-  }
-  .triangle-down_4 {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 10px solid rgb(255, 255, 255);
-    width: 1%;
-    position: relative;
-    top: -1vmax;
-    left: 3.5vmax;
-  }
-} */
 
