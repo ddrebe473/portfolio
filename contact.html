@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
-</head>
-<body>
-    <body style="margin: 0">
-<div class="over">
-    <div class="nav" id="nav" onmouseover="activeNav">
-     
+  </head>
+  <body style="padding: 0 0 0 0; margin: 0 0 0 0">
+    <div class="over">
+      <div class="nav" id="nav">
         <li id="navelement">
-          <a href="./index.html" id="navbutton"> Portfolio Page </a>
+          <a href="portfolio.html" id="navbutton"> Portfolio Page </a>
+          <div class="triangle-down"></div>
         </li>
         <li id="navelement">
-          <a href="./Projects.html" id="navbutton"> Projects </a>
+          <a href="Projects.html" id="navbutton"> Projects </a>
+          <div class="triangle-down_2"></div>
+        </li>
+        <li id="navelement">
+          <a href="./Resume.html" id="navbutton"> Resume </a>
+          <div class="triangle-down_3"></div>
         </li>
         <li id="navelement">
           <a href="./contact.html" id="navbutton"> Contact Me </a>
+          <div class="triangle-down_4"></div>
         </li>
-      </ul>
+      </div>
     </div>
-    </div>
-    <h3>Contact Form</h3>
 
     <div class="contact">
+      <h3>Contact Form</h3>
       <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
+        <label for="fname"></label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your Email"
+        />
+
+        <label for="subject"></label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
       </form>
     </div>
-    
-    </body>
+    <script src="contact.js"></script>
+  </body>
+</html>
