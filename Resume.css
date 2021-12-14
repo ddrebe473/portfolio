@@ -1,0 +1,377 @@
+body {
+  background-color: #b50000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23910b0b' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23711313' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23541717' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%233b1717' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23251515' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23130e0e' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23040404' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  width: 0%;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1.5vw;
+}
+* {
+  scroll-behavior: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --defaultfont: Verdana, Geneva, Tahoma, sans-serif;
+  --navgradient: linear-gradient(90deg, rgb(30, 30, 30), rgb(100, 0, 0));
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  top: -26px;
+  width: 100%;
+  z-index: 100;
+  margin-top: -12px;
+  box-shadow: 0px 5px 25px var(--navgradient);
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(54, 0, 0);
+  transition: all 1s;
+  text-shadow: black 3px 3px;
+}
+.over:hover .nav {
+  /* animation-name: nav;
+        animation-duration: 10s; */
+  top: 1px;
+}
+.nav-show {
+  background-color: red;
+}
+@keyframes nav {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -1000px;
+  }
+}
+
+#navbutton {
+  padding: 5px;
+}
+
+#navlist {
+  align-self: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #850000;
+}
+
+#navelement {
+  display: inline-block;
+  /* float: left; */
+}
+
+#navelement a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 1rem;
+  text-decoration: none;
+  font-family: var(--defaultfont);
+}
+
+.triangle-down {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -10px;
+  left: 60px;
+}
+.triangle-down_2 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -10px;
+  left: 35px;
+}
+.triangle-down_3 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -0.625rem;
+  left: 2.3rem;
+}
+.triangle-down_4 {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid rgb(255, 255, 255);
+  width: 1%;
+  position: relative;
+  top: -0.625rem;
+  left: 3.3rem;
+}
+h1 {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  left: 29vmax;
+  bottom: 38vmax;
+  animation: level 3s;
+}
+
+@keyframes level {
+  from {
+    bottom: 45vmax;
+  }
+  to {
+    bottom: 38vmax;
+  }
+}
+.num-bar {
+  width: 75vmax;
+  height: 35.25vmax;
+  position: absolute;
+  bottom: 6vmax;
+  left: 15vmax;
+  box-shadow: -10px 10px 0 0 red;
+  animation: animate-bar 3s;
+}
+@keyframes animate-bar {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 35.25vmax;
+  }
+
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 75vmax;
+  }
+}
+.HTML-bar {
+  position: absolute;
+  width: 6.5vmax;
+  height: 35vmax;
+  bottom: 0vmax;
+  left: 7.5vmax;
+  background-color: yellow;
+  animation: animate_html 3s;
+}
+@keyframes animate_html {
+  from {
+    height: 0vmax;
+  }
+  to {
+    height: 35vmax;
+  }
+}
+.HTML-words {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 36vmax;
+  right: -1.5vmax;
+}
+.one-zero-zero {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 38%;
+  top: 1%;
+  transform: translateX(-50vw);
+  animation: numbers_ 3s;
+}
+.seven-five {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 38%;
+  top: 25%;
+  transform: translateX(-50vw);
+  animation: numbers_2 3s;
+}
+.five-zero {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 38%;
+  top: 50%;
+  transform: translateX(-50vw);
+  animation: numbers_3 3s;
+}
+.two-five {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 38%;
+  top: 75%;
+  transform: translateX(-50vw);
+  animation: numbers_4 3s;
+}
+.CSS-bar {
+  position: absolute;
+  width: 6.5vmax;
+  height: 28.2vmax;
+  left: 31vmax;
+  background-color: yellow;
+  bottom: 0vmax;
+  animation: animate_css 3s;
+}
+.CSS-words {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 29vmax;
+}
+@keyframes animate_css {
+  from {
+    height: 0vmax;
+  }
+  to {
+    height: 28.2vmax;
+  }
+}
+
+.JS-bar {
+  position: absolute;
+  width: 6.5vmax;
+  height: 16vmax;
+  left: 55.68vmax;
+  background-color: yellow;
+  bottom: 0vmax;
+  animation: animate_js 3s;
+}
+@keyframes animate_js {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 16vmax;
+  }
+}
+.JS-words {
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  left: 1vmax;
+  top: 16.5vmax;
+}
+#timer {
+  margin: 0;
+  position: absolute;
+  bottom: 41.5vmax;
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 30px;
+}
+.wording {
+  position: relative;
+  left: 10vmax;
+  top: 100%;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 20px;
+  width: 50vmax;
+  height: 50vmax;
+}
+.wording_2 {
+  position: absolute;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+  left: 65vmax;
+  top: 120%;
+  font-family: var(--defaultfont);
+  color: white;
+  font-size: 20px;
+  width: 30vmax;
+  height: 50vmax;
+}
+@media (max-width: 1000px) {
+  .triangle-down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -10px;
+    left: 60px;
+  }
+  .triangle-down_2 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 2.5vmax;
+  }
+  .triangle-down_3 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 2.4vmax;
+  }
+  .triangle-down_4 {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    width: 1%;
+    position: relative;
+    top: -1vmax;
+    left: 3.5vmax;
+  }
+}
+@media (max-width: 1000px) {
+  .num-bar {
+    position: absolute;
+    right: 2rem;
+  }
+  .one-zero-zero {
+    font-size: clamp(3vmax, 5vw, 1vmax);
+  }
+  .seven-five {
+    font-size: clamp(3vmax, 5vw, 1vmax);
+  }
+  .five-zero {
+    font-size: clamp(3vmax, 5vw, 1vmax);
+  }
+  .two-five {
+    font-size: clamp(3vmax, 5vw, 1vmax);
+  }
+}
