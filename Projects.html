@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./project.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="./project.css">
-</head>
-<body style="margin: 0">
-  <div class="over">
-    <div class="nav" id="nav" onmouseover="activeNav">
+  </head>
+  <body style="padding: 0 0 0 0; margin: 0 0 0 0">
+    <div class="over">
+      <div class="nav" id="nav">
         <li id="navelement">
-          <a href="./index.html" id="navbutton"> Portfolio Page </a>
+          <a href="portfolio.html" id="navbutton"> Portfolio Page </a>
+          <div class="triangle-down"></div>
         </li>
         <li id="navelement">
-          <a href="./Projects.html" id="navbutton"> Projects </a>
+          <a href="Projects.html" id="navbutton"> Projects </a>
+          <div class="triangle-down_2"></div>
+        </li>
+        <li id="navelement">
+          <a href="./Resume.html" id="navbutton"> Resume </a>
+          <div class="triangle-down_3"></div>
         </li>
         <li id="navelement">
           <a href="./contact.html" id="navbutton"> Contact Me </a>
+          <div class="triangle-down_4"></div>
         </li>
-      </ul>
+      </div>
     </div>
-  </div>
-  <br><br><br>
+    <br /><br /><br />
 
-  <div class="projects">
-    <div class="ol"> 
-      <a href="./top 10 ol and ul.html">
-      <img src="./ol.PNG" width="300" height="300">
-      </a>
-       </a>  <div class="text_3">
-    <p>
-     This is one of my earliest projects I made, practing ol and ul
-    </p>
-  </div>
+    <div class="projects">
+      <div class="ol">
+        <a href="./top 10 ol and ul.html">
+          <img src="./ol.PNG" width="250" height="250" />
+          <br />
+          This is one of my earliest projects I made, practing ol and ul
+        </a>
+      </div>
+      <div class="profile">
+        <a href="https://ddrebe473.github.io/profile/">
+          <img src="./trollfile.PNG" width="250" height="250" />
+          <br />
+          In this project I decided to have fun with it and created a profile
+          for a meme
+        </a>
+      </div>
+      <div class="diy">
+        <a href="Porfolio project/groupProject/index.html">
+          <img src="./diy.PNG" width="250" height="250" />
+          <br />
+          In this project I created a fake businesses web page.The fake
+          businesses is horribel diy projects. we [me and my partner] used CSS
+          and HTML for all the pages. I am the most proud of this project
+          because how well it turned out.
+        </a>
+      </div>
+      <div class="calc">
+        <a href="https://ddrebe473.github.io/Calculator/">
+          <img src="cal.png" width="250" height="250" />
+          <br />
+          In this project I made a basic computer calculator.
+        </a>
+      </div>
+      <div class="tic">
+        <a href="https://ddrebe473.github.io/tictactoe/">
+          <img src="tictactoe.png" width="250" height="250" />
+          <br />
+          In this project I made a tictactoe game you can play with other
+          people.
+        </a>
+      </div>
+      <div class="tic">
+        <a href="https://ddrebe473.github.io/numbers/">
+          <img src="solver.png" width="250" height="250" />
+          <br />
+          In this project I made an 8 ball, and sqrt and squared solver.
+        </a>
+      </div>
     </div>
-    <div class="profile"> 
-      <a href="https://ddrebe473.github.io/profile/">
-      <img src="./trollfile.PNG" width="300" height="300"> 
-      </a>
-       </a>  <div class="text_2">
-    <p>
-      In this project I decided to have fun with the project and created a profile for meme
-    </p>
-  </div>
-    </div>
-    <div class="diy"> 
-      <a href="https://mattholloway04.github.io/groupProject/">
-      <img src="./diy.PNG" width="300" height="300"> 
-      </a>  <div class="text_1">
-    <p>
-      In this project I created a fake businesses web page.The fake businesses is horribel diy projects. 
-      we [me and my partner] used CSS and HTML for all the pages. I am the most proud of this project 
-      because how well it turned out.
-    </p>
-  </div>
-    </div>
-  </div>
-</body>
-
+    <p id="timer"></p>
+    <script src="./Projects.js"></script>
+  </body>
 </html>
+
