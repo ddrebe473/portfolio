@@ -24,37 +24,40 @@ h1 {
   --navgradient: linear-gradient(90deg, rgb(30, 30, 30), rgb(100, 0, 0));
 }
 .me {
-  transform: rotate3d(0, 30, 0, 90deg) translateZ(27.5rem);
-  transform-style: preserve-3d;
+ transform: translateZ(0rem) translateX(-2.5rem) rotate3d(0,1,0,90deg);
+  right: 0rem;
+  position: absolute;
+  width: 15rem;
 }
 .me_1 {
-  position: relative;
-  right: 7.5rem;
-  transform: rotate3d(0, 0, 0, 0deg) translateZ(7.8rem) translateX(27.1rem);
-  transform-style: preserve-3d;
+  transform: translateZ(-7.5rem) translateX(15rem);
+  right: 10rem;
+  position: absolute;
+  width: 15rem;
 }
 .me_2 {
-  position: relative;
-  left: 7.5rem;
-  transform: rotate3d(0, 0, 0, 0deg) translateZ(-7.8rem) translateX(-3.5rem);
-  transform-style: preserve-3d;
+  transform: translateX(-12.5rem) translateZ(0rem) rotate3d(0,1,0,-90deg);
+  left: 10rem;
+  position: absolute;
+  width: 15rem;
 }
 .me_3 {
-  transform: rotate3d(0, 30, 0, 90deg) translateZ(-3.8rem);
-  transform-style: preserve-3d;
+  transform: translateX(-10rem) translateZ(7.5rem);
+  position: absolute;
+  width: 15rem;
 }
 #rotate_me {
   transform-style: preserve-3d;
   perspective: none;
   display: flex;
   align-items: center;
-  width: 100rem;
+  width: 0;
   height: 30rem;
   transition: transform 0.5s linear;
   transform: rotateY(0deg);
   padding-top: 6.25rem;
   position: relative;
-  right: 30rem;
+ left: 15rem;
 }
 #rotate_me:hover {
   animation: rotate 2.5s linear infinite;
@@ -62,7 +65,9 @@ h1 {
 @keyframes rotate {
   to {
     transform: rotateY(360deg);
+
   }
+
 }
 .nav {
   position: fixed;
